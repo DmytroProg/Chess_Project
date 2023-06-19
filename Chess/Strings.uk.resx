@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Bishop" xml:space="preserve">
+    <value>Офіцер</value>
+  </data>
+  <data name="BishopContent" xml:space="preserve">
+    <value>Офіцер може рухатися по діагоналі, як королева, але не вперед, назад або вбік. Кожна сторона починається з двох офіцерів, один на світлому полі, а інший на темному полі.</value>
+  </data>
+  <data name="BlackWin" xml:space="preserve">
+    <value>Чорні перемогли!</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Продовжити</value>
+  </data>
+  <data name="Draw" xml:space="preserve">
+    <value>Нічия</value>
+  </data>
+  <data name="King" xml:space="preserve">
+    <value>Король</value>
+  </data>
+  <data name="KingContent" xml:space="preserve">
+    <value>Шахи виграють шляхом постановки шахів - пастки - королю супротивника. Король може рухатися на будь-яке поле, яке знаходиться безпосередньо поруч з ним: вгору, вниз, убік або по діагоналі.</value>
+  </data>
+  <data name="Knight" xml:space="preserve">
+    <value>Кінь</value>
+  </data>
+  <data name="KnightContent" xml:space="preserve">
+    <value>Кінь — єдина шахова фігура, яка не йде по прямій лінії. Кінь рухається на дві клітинки в одному напрямку, а потім повертається і йде на одну клітинку вбік.</value>
+  </data>
+  <data name="Minutes" xml:space="preserve">
+    <value>хв</value>
+  </data>
+  <data name="Pawn" xml:space="preserve">
+    <value>Пішак</value>
+  </data>
+  <data name="PawnContent" xml:space="preserve">
+    <value>Пішаки рухаються на одне поле вперед і не можуть рухатися назад. Пішак може просунутися на два поля за свій перший хід. Пішаки можуть захопити лише одне поле по діагоналі попереду.</value>
+  </data>
+  <data name="PawnPromotion" xml:space="preserve">
+    <value>Перетворення пішака</value>
+  </data>
+  <data name="Play" xml:space="preserve">
+    <value>Грати</value>
+  </data>
+  <data name="PPContent" xml:space="preserve">
+    <value>Коли пішак досягає кінця дошки, він «просувається», перетворюється на іншу фігуру. У більшості випадків гравці підвищуються до ферзя, але тура, конь або слон також можливі.</value>
+  </data>
+  <data name="Queen" xml:space="preserve">
+    <value>Королева</value>
+  </data>
+  <data name="QueenContent" xml:space="preserve">
+    <value>Королева може рухатися вперед, назад, убік і по діагоналі, як король. Однак, на відміну від короля, королева може рухатися скільки завгодно в кожному з цих напрямків.</value>
+  </data>
+  <data name="ReadRules" xml:space="preserve">
+    <value>Читати правила</value>
+  </data>
+  <data name="RulesHeader" xml:space="preserve">
+    <value>ПРАВИЛА</value>
+  </data>
+  <data name="Tower" xml:space="preserve">
+    <value>Тура</value>
+  </data>
+  <data name="TowerContent" xml:space="preserve">
+    <value>Тура може рухатися вперед, назад і вбік.</value>
+  </data>
+  <data name="WhiteWin" xml:space="preserve">
+    <value>Білі перемогли!</value>
+  </data>
+</root>

@@ -1,0 +1,74 @@
+﻿<Page x:Class="Chess.Views.RulesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Chess.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="300" Background="#482121"
+      x:Name="rulesPage">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontStyle" Value="Italic"></Setter>
+            <Setter Property="FontSize" Value="20"></Setter>
+            <Setter Property="Margin" Value="10, 5"></Setter>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+            <Setter Property="TextAlignment" Value="Justify"></Setter>
+        </Style>
+        <Style x:Key="Header" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontSize" Value="34"></Setter>
+            <Setter Property="Margin" Value="10, 10, 0, 12"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+            <Setter Property="TextWrapping" Value="WrapWithOverflow"></Setter>
+        </Style>
+    </Page.Resources>
+    <ScrollViewer HorizontalScrollBarVisibility="Disabled"
+                  VerticalScrollBarVisibility="Auto">
+        <StackPanel StackPanel.MouseLeave="StackPanel_MouseLeave">
+            <Grid>
+                <Image Height="50" Width="50" Margin="10" Stretch="Fill" HorizontalAlignment="Left"
+                       Source="/Images/arrow.png" x:Name="backArrow" Panel.ZIndex="1"></Image>
+                <TextBlock Grid.Column="1" Foreground="Gold" FontSize="42"
+                       TextAlignment="Center" x:Name="rulesHeader">RULES</TextBlock>
+            </Grid>
+
+            <StackPanel MouseEnter="Pawn_MouseEnter" x:Name="pawnSP">
+                <TextBlock Style="{StaticResource Header}">Pawn</TextBlock>
+                <TextBlock>Pawns move one square forward and cannot move back. A pawn may advance two squares on its first move. Pawns can only capture one square diagonally ahead.</TextBlock>
+            </StackPanel>
+
+            <StackPanel MouseEnter="Rook_MouseEnter" x:Name="rookSP">
+                <TextBlock Style="{StaticResource Header}">Rook</TextBlock>
+                <TextBlock>The rook can move forwards, backward, and sideways.</TextBlock>
+            </StackPanel>
+
+            <StackPanel MouseEnter="Bishop_MouseEnter" x:Name="bishopSP">
+                <TextBlock Style="{StaticResource Header}">Bishop</TextBlock>
+                <TextBlock>The bishop can move diagonally like a queen, but not forward, backward, or sideways. Each side starts with two bishops, one on a light square and one on a dark square.</TextBlock>
+            </StackPanel>
+
+            <StackPanel MouseEnter="Knight_MouseEnter" x:Name="knightSP">
+                <TextBlock Style="{StaticResource Header}">Knight</TextBlock>
+                <TextBlock>The knight is the only chess piece that doesn't go in a straight line. The knight moves two squares in one direction and then turns and goes one square to the side.</TextBlock>
+            </StackPanel>
+
+            <StackPanel MouseEnter="Queen_MouseEnter" x:Name="queenSP">
+                <TextBlock Style="{StaticResource Header}">Queen</TextBlock>
+                <TextBlock>The queen can move forwards, backward, sideways, and diagonally like a king. However, unlike the king, the queen can move as far as it wants to in each of these directions.</TextBlock>
+            </StackPanel>
+
+            <StackPanel MouseEnter="King_MouseEnter" x:Name="kingSP">
+                <TextBlock Style="{StaticResource Header}">King</TextBlock>
+                <TextBlock>Chess is won by checkmating - trapping - the opponent’s king. The king can move to any square that’s directly next to it: up, down, sideways, or diagonal.</TextBlock>
+            </StackPanel>
+
+            <StackPanel MouseEnter="Promotion_MouseEnter"  x:Name="pawnPromSP">
+                <TextBlock Style="{StaticResource Header}">Pawn Promotion</TextBlock>
+                <TextBlock>When a pawn reaches the end of the board it “promotes”, it turns into another piece. Most of the time players promote to a queen, but a rook, knight, or bishop is also possible.</TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+    
+</Page>

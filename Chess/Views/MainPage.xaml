@@ -1,0 +1,120 @@
+﻿<Page x:Class="Chess.Views.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="300"
+      Background="#482121">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="BorderButton">
+            <Setter Property="Border.CornerRadius" Value="10"></Setter>
+            <Setter Property="Border.Margin" Value="20"></Setter>
+            <Setter Property="Border.Padding" Value="5"></Setter>
+        </Style>
+        <Style x:Key="Button" BasedOn="{StaticResource BorderButton}">
+            <Setter Property="Border.Background" Value="#47A992"></Setter>
+            <Style.Triggers>
+                <Trigger Property="Border.IsMouseOver" Value="True">
+                    <Setter Property="Border.Background" Value="#59CEB3"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="HighlightedText">
+            <Setter Property="Control.Foreground" Value="White"></Setter>
+            <Style.Triggers>
+                <Trigger Property="Control.IsMouseOver" Value="True">
+                    <Setter Property="Control.Foreground" Value="#47A992"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="noSelectButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    
+    <Grid Background="#482121" x:Name="settingGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Margin="20" Source="/Images/logo.png" ></Image>
+        <Border MinWidth="220" Background="#7A3E3E" Grid.Row="1"
+                    Style="{StaticResource BorderButton}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="0.3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock FontSize="32">
+                    <Run x:Name="timeTextBlock">15</Run>
+                    <Run x:Name="minutesTextBlock"> mins</Run>
+                </TextBlock>
+                <StackPanel Grid.Column="1" Margin="0, 10">
+                    <Polygon Fill="#482121" x:Name="upNum" 
+                             Points="0,20 20,5 40,20"
+                             MouseLeftButtonUp="upNum_MouseLeftButtonUp"></Polygon>
+                    <Polygon Fill="#482121" x:Name="downNum" 
+                             Points="0,10 20,25 40,10"
+                             MouseLeftButtonUp="downNum_MouseLeftButtonUp"></Polygon>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Border Grid.Row="2" Style="{StaticResource Button}">
+            <Button  Style="{StaticResource noSelectButtonStyle}"
+                    Foreground="White" x:Name="playButton" BorderThickness="0"
+                    Width="250" Height="60">
+                <TextBlock FontSize="36" FontWeight="Medium">Play</TextBlock>
+            </Button>
+        </Border>
+        <Border Grid.Row="3" Style="{StaticResource Button}" Visibility="Hidden">
+            <Button  Style="{StaticResource noSelectButtonStyle}"
+                    Foreground="White" x:Name="continueButton" BorderThickness="0"
+                    Width="250" Height="60">
+                <TextBlock FontSize="36" FontWeight="Medium">Continue</TextBlock>
+            </Button>
+        </Border>
+        <Grid Grid.Row="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Border Grid.Column="0" Margin="40, 10" BorderBrush="Gray" 
+                    BorderThickness="2" CornerRadius="5" x:Name="engLocal">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Images/eng.png"></ImageBrush>
+                </Border.Background>
+            </Border>
+            <Border Grid.Column="1" Margin="40, 10" BorderBrush="Gray" 
+                    BorderThickness="2" CornerRadius="5" x:Name="ukrLocal">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Images/ukr.jpg"></ImageBrush>
+                </Border.Background>
+            </Border>
+
+        </Grid>
+        <TextBlock Grid.Row="5" Margin="20, 15" FontSize="24" x:Name="rulesTextBlock"
+                       TextAlignment="Center" Style="{StaticResource HighlightedText}"
+                       >Read rules</TextBlock>
+    </Grid>
+</Page>

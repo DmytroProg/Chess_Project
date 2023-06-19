@@ -1,0 +1,6 @@
+E:\IT STEP\WPF\ExamProject\DataLogicLayer\bin\Debug\DataLogicLayer.dll
+E:\IT STEP\WPF\ExamProject\DataLogicLayer\bin\Debug\DataLogicLayer.pdb
+E:\IT STEP\WPF\ExamProject\DataLogicLayer\obj\Debug\DataLogicLayer.csproj.AssemblyReference.cache
+E:\IT STEP\WPF\ExamProject\DataLogicLayer\obj\Debug\DataLogicLayer.csproj.CoreCompileInputs.cache
+E:\IT STEP\WPF\ExamProject\DataLogicLayer\obj\Debug\DataLogicLayer.dll
+E:\IT STEP\WPF\ExamProject\DataLogicLayer\obj\Debug\DataLogicLayer.pdb

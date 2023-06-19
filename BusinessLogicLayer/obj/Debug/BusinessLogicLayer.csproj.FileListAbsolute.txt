@@ -1,0 +1,9 @@
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\bin\Debug\DataLogicLayer.dll
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\bin\Debug\DataLogicLayer.pdb
+E:\IT STEP\WPF\ExamProject\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
